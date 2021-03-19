@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:hint="выберите валюту выше и введите сумму(руб.)"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/ConvertButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Конвертировать" />
+
+        <Button
+            android:id="@+id/RenovationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обновить курс" />
+
+        <EditText
+            android:id="@+id/usd"
+            android:layout_width="match_parent"
+            android:layout_height="507dp"
+            android:autofillHints=""
+            android:clickable="false"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="none" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
